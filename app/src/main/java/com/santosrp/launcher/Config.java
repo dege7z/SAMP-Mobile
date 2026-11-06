@@ -5,7 +5,7 @@ public final class Config {
     private Config() {}
 
     public static final String SERVER_NAME = "Santos Roleplay";
-    public static final String SERVER_IP = "";      // ex: "123.45.67.89"
+    public static final String SERVER_IP = "127.0.0.1";      // teste local; depois troque pelo IP/domínio público
     public static final int SERVER_PORT = 7777;
 
     /** Todos os servidores somados no contador ONLINE: {"ip", "porta"}. Adicione quantos quiser. */
@@ -18,11 +18,11 @@ public final class Config {
     /** Pasta que o cliente usa para cache e configurações. */
     public static final String GAME_DIR = "/storage/emulated/0/GTA/";
     /** true = o launcher baixa o cache .zip e extrai em GAME_DIR antes de jogar. */
-    public static final boolean CACHE_ENABLED = false;
+    public static final boolean CACHE_ENABLED = true;
 
     /** Link DIRETO (https) do .zip do cache. O conteúdo do zip deve ficar na raiz,
      *  exatamente como dentro de Android/data/<pacote>/files. */
-    public static final String CACHE_URL = "";      // ex: "https://seusite.com/santos-cache.zip"
+    public static final String CACHE_URL = "https://github.com/dege7z/SAMP-Mobile/releases/download/cache-v1/arquivos.zip";
     /** Mude (ex: "2") quando publicar um cache novo: os jogadores baixam de novo. */
     public static final String CACHE_VERSION = "1";
 
