@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Aplicar launcher Santos RP
+        run: unzip -o santos-merge.zip
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
